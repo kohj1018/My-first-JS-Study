@@ -1,0 +1,59 @@
+.board{
+    height: 300px;
+    margin-top: 100px;
+    line-height: 300px;
+    background: linear-gradient(45deg, #003458, #ceceb8, #8d192b);
+}
+
+.boardText{
+    display: block;
+    margin-left: auto;  margin-right: auto;
+    text-align: center;
+    -webkit-animation: blink 1.5s linear infinite;
+}
+@-webkit-keyframes blink {
+    0% { color: red; }
+    33% { color: orange; }
+    66% { color: blue; }
+    100% { color: purple; }
+}
+
+.bottom{
+    margin-top: 20px;
+    text-align: center;
+}
+
+p{
+    display: inline-block;
+}
+
+input[type=text]{
+    display: inline-block;
+    border: 3px solid skyblue;
+    border-radius: 5px;
+}
+
+.saveBtn{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: lightgray;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5px;
+}
+
+.prnBtn{
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: lightgray;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    margin-left: auto;  margin-right: auto;
+    border-radius: 5px;
+}

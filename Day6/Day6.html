@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function operatorPrn() {
+            var x = parseInt(document.getElementById('x').value);
+            var y = parseInt(document.getElementById('y').value);
+            
+            console.log("x + y = ", x+y);
+            console.log("x - y = ", x-y);
+            console.log("x * y = ", x*y);
+            console.log("x / y = ", x/y);
+        }
+    </script>
+</head>
+<body>
+    <style>
+        p{
+            display: inline;
+        }
+
+        input[type=text]{
+            display: inline-block;
+            text-align: center;
+            border: 3px solid skyblue;
+            border-radius: 5px;
+            margin-top: 30px;   margin-left: auto;  margin-right: auto;
+        }
+
+        .btn{
+            width: 60px;
+            height: 40px;
+            background-color: lightgray;
+            border: 1px solid black;
+            cursor: pointer;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+
+    <div class="layout">
+        <p>x : </p>
+        <input id="x" type="text">
+        <p>y : </p>
+        <input id="y" type="text">
+        <div class="btn" onclick="operatorPrn()">출력</div>
+    </div>
+</body>
+</html>

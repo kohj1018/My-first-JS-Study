@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        let h = 0, m = 0, s = 0;    // h : 시, m : 분, s : 초
+        function start() {
+            repeat = setInterval(goesOn, 1000); // var 키워드 없이 선언하면 전역변수
+        }
+
+        function goesOn() { // setInterval로 1초마다 반복실행하게 될 함수
+            s++;
+            if (s == 60) {
+                s = 0;
+                m++;
+
+                if (m == 60) {
+                    m = 0;
+                    h++;
+                }
+            }
+            let time = document.getElementsByClassName('time');
+            time[0].innerHTML = `${h < 10 ? `0${h}` : h}:${m < 10 ? `0${m}`: m}:${s < 10 ? `0${s}` : s}`;
+        }
+
+        function stop() {
+            clearInterval(repeat);
+        }
+
+        function reset() {
+            clearInterval(repeat);
+            let time = document.getElementsByClassName('time');
+            time[0].innerHTML = "00:00:00";
+            h = 0; m = 0; s = 0;
+        }
+    </script>
+</head>
+<body>
+    <style>
+        .btn{
+            display: inline-block;
+            width: 60px;
+            height: 40px;
+            background-color: lightgray;
+            border: 1px solid black;
+            cursor: pointer;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+
+    <div class="layout">
+        <h1 class="time">00:00:00</h1>
+        <div class="btns">
+            <div class="btn" onclick="start()">시작</div>
+            <div class="btn" onclick="stop()">멈춤</div>
+            <div class="btn" onclick="reset()">초기화</div>
+        </div>
+    </div>
+</body>
+</html>

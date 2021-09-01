@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Day9</title>
+
+    <link rel="stylesheet" href="./Day9.css">
+</head>
+<body>
+    <div class="layout">
+        <div class="head">
+            <h1 class="mainTitle" onclick="getInformation(0)">MOVIE</h1>
+            <div class="tab">
+                <div class="tabBtn" onclick="getInformation(1)">Inception</div>
+                <div class="tabBtn" onclick="getInformation(2)">Shutter Island</div>
+                <div class="tabBtn" onclick="getInformation(3)">Life Is Beautiful</div>
+            </div>
+        </div>
+        <div class="main">
+            <img id="mainImg" src="./img/mainImg.jpg" alt="">
+
+            <div class="view">
+                <img id="poster" src="" alt="포스터" style="display: none;">
+                <p id="grade" style="display: none;">★0.00</p>
+            </div>
+            <div class="basicInform">
+                <ul id="inform" style="display: none;">
+                    <li id="release"></li>
+                    <li id="rating"></li>
+                    <li id="genre"></li>
+                    <li id="country"></li>
+                    <li id="runningTime"></li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+
+    <script src="./Day9.js"></script>
+</body>
+</html>

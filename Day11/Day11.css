@@ -1,0 +1,89 @@
+.layout {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+@font-face {
+    font-family: "MaruBuri-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cat_says {
+    width: 700px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    margin-left: auto;  margin-right: auto;
+    border-radius: 7px;
+    border: solid 3px #000000;
+    font-size: 30px;
+    font-family: "MaruBuri-Regular";
+}
+
+.cat_says_form img {
+    display: block;
+    width: 550px;
+    height: 100px;
+    margin-left: auto;  margin-right: auto;
+}
+
+.cat {
+    width: 100px;
+    margin-left: auto;  margin-right: auto;
+}
+.cat img {
+    width: 100px;
+    height: 100px;
+}
+
+.input_layout {
+    display: block;
+    width: 312px;
+    height: 19px;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 20px; margin-left: auto;  margin-right: auto;
+    border: solid 2px #5f9be0;
+    border-radius: 3px;
+    font-family: "MaruBuri-Regular";
+}
+
+.btn {
+    width: 180px;
+    height: 50px;
+    background: #76b3fa;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 1.45em;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 30px; margin-left: auto;  margin-right: auto;
+    cursor: pointer;
+    font-family: "MaruBuri-Regular";
+}
+
+.stopBtn {
+    display: none;
+    width: 150px;
+    height: 40px;
+    background: #4f5255;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.0em;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+@-webkit-keyframes blink {
+    0% { color: yellow; }
+    33% { color: red; }
+    66% { color: blue; }
+    100% { color: white; }
+}

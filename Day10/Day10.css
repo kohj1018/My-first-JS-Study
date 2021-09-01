@@ -1,0 +1,65 @@
+.layout {
+    background-color: black;
+    width: 400px;
+    height: 640px;
+    margin-left: auto;  margin-right: auto;
+}
+
+.timeChecker {
+    display: none;
+    padding-top: 20px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.info {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.name {
+    color: white;
+    font-size: 40px;
+}
+
+.number {
+    color: white;
+    font-size: 15px;
+}
+
+.profile-img {
+    margin-top: 40px;
+    width: 100px;
+    margin-left: auto;  margin-right: auto;
+}
+.profile-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.btns {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.btn {
+    width: 70px;
+    margin-left: auto;  margin-right: auto;
+    cursor: pointer;
+    text-align: center;
+}
+.btn img {
+    width: 70px;
+    height: 70px;
+}
+
+.hangup-btn {
+    display: none;
+}
+
+@-webkit-keyframes blink {
+    0% { color: red; }
+    100% { color: whitesmoke; }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var num = 7;
+        var str = "Hi, 모각코";
+        var bool = true;
+        var obj1 = {name : "KBW"};
+        var undef;
+        var obj2 = {
+            greeting : function() {
+                return "Hi, Nice to meet you!"
+            }
+        }
+
+        function objectData() {
+            console.log(typeof(num));
+            console.log(typeof(str));
+            console.log(typeof(bool));
+            console.log(typeof(obj1));
+            console.log(typeof(undef));
+            console.log(typeof(obj2));
+        }
+    </script>
+</head>
+<body>
+    <style>
+        .btn{
+            width: 60px;
+            height: 40px;
+            background-color: lightgray;
+            border: 1px solid black;
+            cursor: pointer;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 10px;
+        }
+    </style>
+
+    <div class="btn" onclick="objectData()">버튼</div>
+</body>
+</html>

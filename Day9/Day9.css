@@ -1,0 +1,55 @@
+.mainTitle{
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.tab{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.tabBtn{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+}
+
+.main{
+    padding: 50px 300px;
+    text-align: center;
+}
+
+#mainImg{
+    margin-top: 50px; margin-left: auto;  margin-right: auto;
+}
+
+#grade{
+    position: absolute;
+    bottom: 0px;
+    margin-left: 150px;
+    font-size: 30px;
+}
+
+#poster{
+    float: left;
+    width: 400px;
+    height: 530px;
+}
+
+.basicInform{
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.basicInform ul li{
+    text-align: left;
+    font-size: 30px;
+    line-height: 60px;
+}

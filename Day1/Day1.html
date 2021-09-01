@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>1일차!!</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url("./image/background.jpg");
+
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .answerText{
+            display: block;
+            width: 800px;
+            height: 300px;
+            border: 10px solid darkblue;
+            border-radius: 3px;
+            margin-top: 10px;   margin-left: auto;  margin-right: auto;
+            text-align: center;
+            line-height: 260px;
+            color: white;
+        }
+        
+        img{
+            display: block;
+            width: 150px;
+            height: 200px;
+            margin-top: 50px;  margin-left: auto;  margin-right: auto; /*좌우 가운데 정렬*/
+        }
+
+        input[type=text]{
+            display: block;
+            text-align: center;
+            border: 3px solid skyblue;
+            border-radius: 5px;
+            margin-top: 30px;   margin-left: auto;  margin-right: auto;
+        }
+
+        .submitBtn{
+            display: block;
+            width: 200px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            border-radius: 20px;
+            margin-top: 30px;   margin-left: auto;  margin-right: auto;
+        }
+    </style>
+
+    <div class="answerText"><h1>Ok! I got it</h1></div>
+    <form>
+        <img src="./image/genie.png">
+        <input type="text" size="40">
+        <div class="submitBtn">소원을 들어줘</div>
+    </form>
+</body>
+</html>
